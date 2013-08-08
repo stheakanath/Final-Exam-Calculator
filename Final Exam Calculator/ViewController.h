@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+{
+    UIButton *doneEntering;
+    UIButton *doneEnteringPercent;
+    UILabel *valueofslider;
+    UISlider *slider;
+    UIImageView *titleWhenEntering;
+    IBOutlet UITextField *gradeGoingIntoFinal;
+    IBOutlet UITextField *finalGradeWanted;
+    IBOutlet UITextField *percentOfExam;
+    IBOutlet UIImageView *fadeviewbackground;
+}
 
+-(IBAction) calculate;
+-(IBAction) resetdata;
+-(IBAction) linktohelp;
 @end
